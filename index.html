@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Ecommerce</title>
+    
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class='bx bx-podcast'></i></i>WebDeveloper</a>
+
+        <ul class="navegação">
+            <li><a href="#">Visão geral</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul><!--navegação-->
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div><!--header-icons-->
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="./img/Portes (1).png" class="one">
+        </div><!--home-img-->
+
+        <div class="home-text">
+
+            <h1>PORTES<br> DEVOLOPER</h1>
+            <h5>Consutorias a partir de:</h5>
+            <h3>R$199.00</h3>
+            <a href="#" class="btn">Saiba mais</a>
+
+        </div><!--home-text-->
+    </section><!--home-->
+
+
+    <div class="main">
+        <div class="row">
+            <li><img src="./img/" onclick="slider('product1.png')"></li>
+        </div><!--row-->
+
+        <div class="row2">
+            <li><img src="main2.png" onclick="slider('product2.png')"></li>
+        </div><!--row2-->
+
+        <div class="row3">
+            <li><img src="main3.png" onclick="slider('product3.png')"></li>
+        </div><!--row3-->
+    </div><!--main-->
+
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+    </script>
+</body>
+</html>
